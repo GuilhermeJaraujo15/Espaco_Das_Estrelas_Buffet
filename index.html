@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Espaço das Estrelas — buffet fixo para festas, celebrações e eventos especiais.">
+    <title>Espaço das Estrelas | Buffet e Espaço para Festas</title>
+
+    <!-- Preconnect para otimização de fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header" id="site-header" role="banner">
+        <div class="container header-inner">
+            <!-- Logo -->
+            <a href="#topo" class="brand" aria-label="Espaço das Estrelas - Página inicial">
+                <div class="brand-logo">
+                    <span class="logo-space">ESPAÇO DAS</span>
+                    <span class="logo-stars">ESTRELAS</span>
+                </div>
+            </a>
+
+            <!-- Navegação Desktop -->
+            <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+                <ul class="main-nav-list">
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobreOEspaco">Sobre o Espaço</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#processo">Contratação</a></li>
+                 <li><a href="#localizacao">Localização</a></li>
+                    <li><a href="#contato" class="nav-cta">Agende uma visita</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botão Menu Mobile -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="mobile-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Navegação Mobile -->
+        <nav class="mobile-nav" id="mobile-nav" aria-label="Navegação mobile">
+            <ul class="mobile-nav-list">
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobreOEspaco">Sobre o Espaço</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#processo">Contratação</a></li>
+                 <li><a href="#localizacao">Localização</a></li>
+                    <li><a href="#contato" class="nav-cta">Agende uma visita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ==================== HERO COM VÍDEO ==================== -->
+        <section class="hero" id="topo" role="banner">
+            <!-- Container do Vídeo -->
+            <div class="hero-video-wrapper">
+                <video class="hero-video" id="heroVideo" muted playsinline preload="metadata"
+                    poster="https://via.placeholder.com/1920x1080/0A0A0A/C9A84C?text=Espa%C3%A7o+das+Estrelas">
+
+                    <source src="./video/header.mp4" type="video/mp4">
+                    <!-- Fallback: imagem estática -->
+                    <img src="https://via.placeholder.com/1920x1080/0A0A0A/C9A84C?text=Espa%C3%A7o+das+Estrelas"
+                        alt="Espaço das Estrelas — buffet e espaço para festas" loading="lazy">
+                </video>
+                <div class="hero-video-overlay"></div>
+            </div>
+
+            <!-- Padrão de fundo (fallback) -->
+            <div class="hero-background">
+                <div class="hero-pattern"></div>
+            </div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+                <div class="hero-text">
+                
+                    <h1 class="hero-headline">
+                        <span class="hero-line">Seu momento especial</span>
+                        <span class="hero-line hero-line-gold">merece um lugar</span>
+                        <span class="hero-line">inesquecível</span>
+                    </h1>
+                    <p class="hero-subtext">Um espaço preparado para receber seus convidados com conforto, beleza e uma experiência completa do começo ao fim.</p>
+                    <div class="hero-actions">
+                        <a href="#contato" class="btn btn-primary btn-hero">
+                            <span>Agende uma visita</span>
+                            <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12H19M19 12L13 6M19 12L13 18" />
+                            </svg>
+                        </a>
+                        <a href="#sobreOEspaco" class="btn btn-outline btn-hero-secondary">
+                            Conheça o Espaço
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== DIFERENCIAIS ==================== -->
+        <section class="features" id="diferenciais" aria-labelledby="features-title">
+            <div class="container">
+                <div class="features-head">
+                    <span class="section-badge">O que nos faz único</span>
+                    <h2 class="section-title" id="features-title">Por que celebrar no <span class="text-gold">Espaço das Estrelas</span></h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon-wrapper">
+                            <svg class="feature-icon" viewBox="0 0 48 36" fill="none" stroke="currentColor"
+                                stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M10 22h28" />
+                                <path d="M14 22c.8-6.4 5-10.4 10-10.4S33.2 15.6 34 22" />
+                                <path d="M24 11.6V7.2" />
+                                <path d="M20.8 7.2h6.4" />
+                                <path d="M17.2 26h13.6" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Elegância e Sofisticação</h3>
+                        <p class="feature-desc">Um ambiente elegante estilo fazenda para receber seus convidados e criar memórias especiais.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon-wrapper">
+                            <svg class="feature-icon" viewBox="0 0 48 36" fill="none" stroke="currentColor"
+                                stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="13" y="7" width="22" height="24" rx="3" />
+                                <path d="M19 7.5V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.5" />
+                                <path d="M19 15h10" />
+                                <path d="M19 21h6" />
+                                <path d="M18.5 27l3 3 7-8" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Tudo pensado para sua festa</h3>
+                        <p class="feature-desc">Estrutura, atendimento e detalhes pensados para tornar sua celebração mais tranquila.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon-wrapper">
+                            <svg class="feature-icon" viewBox="0 0 48 36" fill="none" stroke="currentColor"
+                                stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M24 7.5l4.6 9.2 10.2 1.5-7.4 7.2 1.7 10.1L24 30.7l-9.1 4.8 1.7-10.1-7.4-7.2 10.2-1.5L24 7.5z" />
+                                <path
+                                    d="M24 13.8l2.6 5.2 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.2-4.1 5.8-.8 2.6-5.2z" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Estrutura para Celebrar</h3>
+                        <p class="feature-desc">Um espaço preparado para unir conforto, organização e beleza em um só lugar.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon-wrapper">
+                            <svg class="feature-icon" viewBox="0 0 48 36" fill="none" stroke="currentColor"
+                                stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 3s5 5.2 5 10a5 5 0 0 1-10 0c0-4.8 5-10 5-10z" />
+                                <path d="M12 14.5c1.2-1.3 2-2.7 2-4.1" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Buffet e Gastronomia</h3>
+                        <p class="feature-desc">Uma experiência gastronômica que acompanha o estilo e a proposta de cada celebração.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SERVIÇOS ==================== -->
+        <section class="services" id="servicos" aria-labelledby="services-title">
+            <div class="container">
+                <div class="services-head">
+                    <span class="section-badge">O que fazemos</span>
+                    <h2 class="section-title" id="services-title">Um espaço pensado para seu <span
+                            class="text-gold">momento</span></h2>
+                    <p class="section-subtitle">Um endereço para celebrar aniversários, recepções, confraternizações e momentos especiais</p>
+                </div>
+                <div class="services-grid">
+                    <article class="services-card">
+                        <div class="services-card-image">
+                            <img src="https://via.placeholder.com/600x600/1a1a1a/C9A84C?text=Sal%C3%A3o+de+Festas" alt="Salão de festas do Espaço das Estrelas"
+                                loading="lazy">
+                        </div>
+                        <div class="services-card-content">
+                            <h3 class="services-card-title">Salão de Festas</h3>
+                            <p class="services-card-desc">Cerimônias e recepções que realizam o sonho do amor com
+                                elegância e sofisticação.</p>
+                            <a href="#contato" class="services-card-link">Saiba mais →</a>
+                        </div>
+                    </article>
+                    <article class="services-card">
+                        <div class="services-card-image">
+                            <img src="https://via.placeholder.com/600x600/1a1a1a/C9A84C?text=Buffet"
+                                alt="Buffet e gastronomia" loading="lazy">
+                        </div>
+                        <div class="services-card-content">
+                            <h3 class="services-card-title">Buffet Completo</h3>
+                            <p class="services-card-desc">Confraternizações, lançamentos e experiências que impressionam
+                                clientes e equipes.</p>
+                            <a href="#contato" class="services-card-link">Saiba mais →</a>
+                        </div>
+                    </article>
+                    <article class="services-card">
+                        <div class="services-card-image">
+                            <img src="https://via.placeholder.com/600x600/1a1a1a/C9A84C?text=Decora%C3%A7%C3%A3o"
+                                alt="Decoração e ambientação" loading="lazy">
+                        </div>
+                        <div class="services-card-content">
+                            <h3 class="services-card-title">Decoração e Ambientação</h3>
+                            <p class="services-card-desc">Aniversários, formaturas e celebrações únicas com estilo e
+                                personalidade.</p>
+                            <a href="#contato" class="services-card-link">Saiba mais →</a>
+                        </div>
+                    </article>
+                    <article class="services-card">
+                        <div class="services-card-image">
+                            <img src="https://via.placeholder.com/600x600/1a1a1a/C9A84C?text=Eventos" alt="Eventos e recepções"
+                                loading="lazy">
+                        </div>
+                        <div class="services-card-content">
+                            <h3 class="services-card-title">Eventos e Recepção</h3>
+                            <p class="services-card-desc">Cuidamos da trilha sonora de seus eventos, criando ambientes
+                                imersivos e memoráveis.</p>
+                            <a href="#contato" class="services-card-link">Saiba mais →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="sobreOEspaco" aria-labelledby="about-title">
+            <div class="container about-layout">
+                <div class="about-text-column">
+
+                    <h2 class="about-headline" id="about-title">Um espaço criado para celebrar <span
+                            class="text-gold">momentos</span> que merecem ser lembrados</h2>
+                    <div class="about-divider"></div>
+                    <p class="about-text">O <strong>Espaço das Estrelas</strong> foi pensado para transformar celebrações em experiências especiais, reunindo em um único endereço o ambiente, a recepção e a estrutura necessários para receber seus convidados.</p>
+                    <p class="about-text">Nossa proposta é oferecer um espaço acolhedor e elegante para que você possa aproveitar a festa, enquanto cuidamos dos detalhes que tornam o momento mais leve, bonito e memorável.</p>
+                    <a href="#contato" class="btn btn-primary about-btn">
+                        <span>Reserve um Horário para conhecer!</span>
+                        <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12H19M19 12L13 6M19 12L13 18" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="about-carousel-column">
+                    <div class="about-carousel-wrapper">
+                        <div class="about-carousel" id="aboutCarousel" role="region"
+                            aria-label="Galeria do Espaço das Estrelas">
+                            <div class="about-carousel-track" id="aboutCarouselTrack">
+                                <div class="about-carousel-card">
+                                    <div class="about-carousel-image">
+                                        <img src="https://via.placeholder.com/300x300/1a1a1a/C9A84C?text=Sal%C3%A3o"
+                                            alt="Salão de festas do Espaço das Estrelas" loading="lazy">
+                                    </div>
+
+                                </div>
+
+                                <div class="about-carousel-card">
+                                    <div class="about-carousel-image">
+                                        <img src="https://via.placeholder.com/300x300/1a1a1a/C9A84C?text=Ambiente"
+                                            alt="Ambiente do Espaço das Estrelas" loading="lazy">
+                                    </div>
+   
+                                </div>
+
+                                <div class="about-carousel-card">
+                                    <div class="about-carousel-image">
+                                        <img src="https://via.placeholder.com/300x300/1a1a1a/C9A84C?text=Buffet"
+                                            alt="Buffet do Espaço das Estrelas" loading="lazy">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="about-carousel-btn about-carousel-btn-prev" id="aboutCarouselPrev"
+                            type="button" aria-label="Slide anterior">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 18l-6-6 6-6" />
+                            </svg>
+                        </button>
+
+                        <button class="about-carousel-btn about-carousel-btn-next" id="aboutCarouselNext"
+                            type="button" aria-label="Próximo slide">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 6l6 6-6 6" />
+                            </svg>
+                        </button>
+
+                        <div class="about-carousel-dots" id="aboutCarouselDots" role="tablist"
+                            aria-label="Navegação do carrossel"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== DEPOIMENTOS ==================== -->
+        <section class="testimonials" id="depoimentos" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="testimonials-head">
+                    <span class="section-badge">FeedBacks</span>
+                    <h2 class="section-title" id="testimonials-title">O que nossos clientes <span
+                            class="text-gold">dizem</span></h2>
+                    <p class="section-subtitle">Espaço reservado para avaliações reais dos clientes do Espaço das Estrelas</p>
+                </div>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">Quero deixar meus parabéns, ao Espaço das Estrelas!
+Um salão de festas maravilhoso, ambiente lindo, organizado, aconchegante e com atendimento excelente. Um lugar especial que realmente faz qualquer comemoração brilhar ainda mais.
+Super recomendo!</p>
+                        <div class="testimonial-author">
+                           
+                            <div>
+                                <div class="testimonial-name">Avaliação publicada no Google</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">Excelente espaço, ambiente agradável, bem estruturado na parte de cozinha, com boas acomodações, gostei muito!</p>
+                        <div class="testimonial-author">
+
+                            <div>
+                                <div class="testimonial-name">Avaliação publicada no Google</div>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">Um espaço maravilhoso com uma ótima estrutura, os donos são de uma gentileza ímpar. O que você precisar eles estão dispostos a fazer para você realizar seu evento da melhor forma. Eu fiquei muito feliz com o tratamento. Recomendo.</p>
+                        <div class="testimonial-author">
+
+                            <div>
+                                <div class="testimonial-name">Avaliação publicada no Google</div>
+
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROCESSO ==================== -->
+        <section class="process" id="processo" aria-labelledby="process-title">
+            <div class="container">
+                <div class="process-head">
+                    <span class="section-badge section-badge-light">Como funciona o processo de contratação</span>
+                    <h2 class="section-title section-title-light" id="process-title">Da ideia à <span
+                            class="text-gold">celebração</span></h2>
+                </div>
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="process-step-number">01</div>
+                        <h3 class="process-step-title">Conversa inicial</h3>
+                        <p class="process-step-desc">Alinhamos o tipo de evento, quantidade de convidados e o que você espera do espaço.
+                        </p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-step-number">02</div>
+                        <h3 class="process-step-title">Visita ao espaço</h3>
+                        <p class="process-step-desc">Apresentamos a estrutura, opções disponíveis e os detalhes para sua reserva.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-step-number">03</div>
+                        <h3 class="process-step-title">Planejamento</h3>
+                        <p class="process-step-desc">Definimos decoração, buffet e demais itens combinados para a sua celebração.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-step-number">04</div>
+                        <h3 class="process-step-title">Dia da festa</h3>
+                        <p class="process-step-desc">Você recebe seus convidados e aproveita o momento em um espaço preparado para a ocasião.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTATO ==================== -->
+        <section class="contact" id="contato" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="contact-content">
+                    <span class="section-badge">Vamos Conversar</span>
+                    <h2 class="contact-title" id="contact-title">Vamos preparar seu <span class="text-gold">grande momento</span></h2>
+                    <p class="contact-text">Solicite um orçamento personalizado e descubra como podemos transformar seu
+                        evento em uma experiência inesquecível.</p>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.9v3a2 2 0 0 1-2.2 2c-9.9-.8-17.9-8.8-18.7-18.7A2 2 0 0 1 3.1 2h3a2 2 0 0 1 2 1.4 12.8 12.8 0 0 0 .7 2.9 2 2 0 0 1-.4 2.1L6.7 9.5a16 16 0 0 0 7.8 7.8l1.1-1.1a2 2 0 0 1 2.1-.4 12.8 12.8 0 0 0 2.9.7 2 2 0 0 1 1.4 2z" />
+                            </svg>
+                            <div>
+                                <strong>Telefone</strong>
+                                <a href="tel:+5500000000000">(11) 98918-1408</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            <div>
+                                <strong>E-mail</strong>
+                                <a href="mailto:contato@espacodasestrelas.com.br">contato@espacodasestrelas.com.br</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/11979728871" target="_blank" rel="noopener"
+                        class="btn btn-primary contact-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                            <path
+                                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.47 1.29 4.93L2 22l5.31-1.39a9.86 9.86 0 0 0 4.73 1.2h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.83 14.05c-.25.7-1.45 1.35-2 1.43-.51.08-1.15.11-1.86-.12-.43-.13-.98-.32-1.68-.62-2.96-1.28-4.89-4.25-5.04-4.45-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.6-.37.8-.37.2 0 .4 0 .57.01.18.01.43-.07.67.51.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.32-.3.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.02 1.12 1 2.06 1.31 2.36 1.46.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.08.13.08.72-.17 1.42z" />
+                        </svg>
+                        <span>Fale conosco pelo WhatsApp</span>
+                    </a>
+                    <div class="contact-social">
+                        <span class="contact-social-label">Siga-nos:</span>
+                        <div class="contact-social-links">
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                                    <circle cx="12" cy="12" r="4" />
+                                    <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none" />
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== LOCALIZAÇÃO ==================== -->
+        <section class="location" id="localizacao" aria-labelledby="location-title">
+            <div class="container">
+                <div class="location-head">
+                    <span class="section-badge">Onde estamos</span>
+                    <h2 class="section-title" id="location-title">Venha conhecer o <span class="text-gold">Espaço</span></h2>
+                    <p class="section-subtitle">
+                        <strong>Endereço:</strong> R. Vinte e Três de Setembro, 77 - Vila Santista, São Paulo - SP, 02560-040
+                    </p>
+                </div>
+
+                <div class="location-map-wrap">
+                    <!--
+                        GOOGLE MAPS:
+                        Substitua SOMENTE o valor de "q=" abaixo pelo endereço real,
+                        mantendo "&output=embed".
+                        Exemplo:
+                        https://www.google.com/maps?q=Rua+Exemplo,+123,+São+Paulo+-+SP&output=embed
+                    -->
+                    <iframe
+                        class="location-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.0469346815903!2d-46.6711901!3d-23.494818899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef9001b8a7a23%3A0x700e78f1683f7cd9!2sEspa%C3%A7o%20das%20Estrelas!5e0!3m2!1sen!2sbr!4v1789841353654!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></src=>
+                        title="Mapa do Espaço das Estrelas"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <span class="logo-space">ESPAÇO DAS</span>
+                    <span class="logo-stars">ESTRELAS</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Espaço das Estrelas. Todos os direitos reservados.</span>
+                <span>CNPJ: [preencher]</span>
+                <span>Desenvolvido por <a href="https://www.linkedin.com/in/guilherme-jorge-de-araujo-/" class="footer-credit" target="_blank" rel="noopener noreferrer">Guilherme J. Araujo</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== WHATSAPP FLOAT ==================== -->
+    <a class="whatsapp-float" href="https://wa.me/5500000000000" target="_blank" rel="noopener"
+        aria-label="Fale com o Espaço das Estrelas pelo WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.47 1.29 4.93L2 22l5.31-1.39a9.86 9.86 0 0 0 4.73 1.2h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.83 14.05c-.25.7-1.45 1.35-2 1.43-.51.08-1.15.11-1.86-.12-.43-.13-.98-.32-1.68-.62-2.96-1.28-4.89-4.25-5.04-4.45-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.6-.37.8-.37.2 0 .4 0 .57.01.18.01.43-.07.67.51.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.32-.3.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.02 1.12 1 2.06 1.31 2.36 1.46.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.08.13.08.72-.17 1.42z" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
